@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Support — FoxHeight</title>
+  <meta name="description" content="Customer support with AI chat and contact options." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@700;800&family=Sora:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles/tokens.css" />
+  <link rel="stylesheet" href="styles/base.css" />
+  <link rel="stylesheet" href="styles/components.css" />
+  <link rel="stylesheet" href="styles/pages.css" />
+</head>
+<body>
+  <header class="navbar glass">
+    <div class="inner container">
+      <a class="brand" href="index.html" aria-label="FoxHeight Home">
+        <img src="assets/logo-neural-fox.svg" alt="FoxHeight" />
+        <span class="name">FoxHeight</span>
+      </a>
+      <nav class="nav" aria-label="Primary">
+        <a href="index.html">Company</a>
+        <a href="vision.html">Vision & Mission</a>
+        <a href="partnership.html">Microsoft Partnership</a>
+        <div class="dropdown" aria-expanded="false">
+          <a href="#" class="dropdown-toggle" aria-haspopup="true" aria-expanded="false">Ecosystem ▾</a>
+          <div class="dropdown-menu glass" role="menu">
+            <a class="dropdown-item is-foxflight" href="https://foxflight.foxheight.com" target="_blank" rel="noopener"><span class="dot"></span>FoxFlight</a>
+            <a class="dropdown-item is-foxai" href="https://foxai.foxheight.com" target="_blank" rel="noopener"><span class="dot"></span>FoxAI</a>
+            <a class="dropdown-item is-foxcloud" href="https://foxcloud.foxheight.com" target="_blank" rel="noopener"><span class="dot"></span>FoxCloud</a>
+            <a class="dropdown-item is-foxdata" href="https://foxdata.foxheight.com" target="_blank" rel="noopener"><span class="dot"></span>FoxData</a>
+            <a class="dropdown-item is-foxos" href="https://foxos.foxheight.com" target="_blank" rel="noopener"><span class="dot"></span>FoxOS</a>
+          </div>
+        </div>
+        <a href="ecosystem.html">Overview</a>
+        <a href="about.html">About</a>
+        <a href="careers.html">Careers</a>
+        <a href="resources.html">Resources</a>
+        <a href="docs.html">Documentation</a>
+        <a href="blog.html">Tech Blog</a>
+        <a href="support.html" aria-current="page">Support</a>
+        <a href="press.html">Press Kit</a>
+        <a href="legal.html">Legal</a>
+      </nav>
+      <div class="row">
+        <button class="btn btn--ghost" data-action="toggle-theme" aria-label="Toggle theme">🌓</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="container">
+        <h1 class="gradient-text">Support</h1>
+        <p class="muted">We’re here to help—choose a support tier or chat with our AI assistant.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container grid support-tiers reveal">
+        <div class="tier">
+          <h3>General Support</h3>
+          <p class="muted">Account and product questions.</p>
+          <a class="btn btn--small" href="mailto:support@foxheight.com?subject=General%20Support">Email</a>
+        </div>
+        <div class="tier">
+          <h3>Developer Help</h3>
+          <p class="muted">APIs, SDKs, and integration troubleshooting.</p>
+          <a class="btn btn--small" href="mailto:support@foxheight.com?subject=Developer%20Help">Email</a>
+        </div>
+        <div class="tier">
+          <h3>Enterprise Contact</h3>
+          <p class="muted">Security, governance, and enterprise onboarding.</p>
+          <a class="btn btn--small" href="mailto:support@foxheight.com?subject=Enterprise%20Contact">Email</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container grid" style="grid-template-columns: 1fr 1fr; gap: 24px;">
+        <div class="chat">
+          <div class="messages" id="chat-messages">
+            <div class="small muted">AI chat placeholder. Your assistant will appear here.</div>
+          </div>
+          <div class="composer">
+            <input id="chat-input" placeholder="Ask a question..." />
+            <button class="btn btn--primary" id="chat-send">Send</button>
+          </div>
+        </div>
+        <div class="card" style="padding:16px;">
+          <h3>Feedback</h3>
+          <p class="muted">Tell us how we can improve.</p>
+          <div class="grid" style="grid-template-columns: 1fr; gap: 10px;">
+            <input style="padding:12px 14px; border-radius: 14px; border:1px solid var(--color-border); background: var(--color-surface);" placeholder="Name" />
+            <input style="padding:12px 14px; border-radius: 14px; border:1px solid var(--color-border); background: var(--color-surface);" placeholder="Email" />
+            <textarea rows="5" style="padding:12px 14px; border-radius: 14px; border:1px solid var(--color-border); background: var(--color-surface); resize: vertical;" placeholder="Your feedback..."></textarea>
+            <button class="btn btn--ghost">Submit</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-topline"></div>
+    <div class="inner container">
+      <div class="logos"><img src="assets/logo-neural-fox.svg" alt="FoxHeight" width="28" height="28"/><span class="small muted">© FoxHeight</span></div>
+      <div class="note small">Contact: support@foxheight.com</div>
+      <div class="logos"><img src="assets/logo-microsoft.svg" alt="Microsoft" height="30"/></div>
+    </div>
+  </footer>
+
+  <button class="contact-orb" aria-label="Contact FoxHeight"><span class="pulse"></span>✉️</button>
+  <script src="scripts/main.js"></script>
+  <script>
+    (function(){
+      const input = document.getElementById('chat-input');
+      const send = document.getElementById('chat-send');
+      const list = document.getElementById('chat-messages');
+      function append(text, who){
+        const row = document.createElement('div');
+        row.className = 'row';
+        const bubble = document.createElement('div');
+        bubble.className = 'badge';
+        bubble.textContent = (who === 'you' ? 'You: ' : 'AI: ') + text;
+        row.appendChild(bubble);
+        list.appendChild(row);
+        list.scrollTop = list.scrollHeight;
+      }
+      send.addEventListener('click', () => {
+        const q = input.value.trim();
+        if(!q) return;
+        append(q, 'you');
+        input.value='';
+        setTimeout(() => append('Thanks! A support specialist will follow up shortly.', 'ai'), 400);
+      });
+      input.addEventListener('keydown', (e) => { if(e.key==='Enter'){ e.preventDefault(); send.click(); }});
+    })();
+  </script>
+</body>
+</html>
