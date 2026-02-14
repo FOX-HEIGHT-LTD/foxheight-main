@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Tech Blog — FoxHeight</title>
+  <meta name="description" content="Insights on AI, data, and AGI." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@700;800&family=Sora:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles/tokens.css" />
+  <link rel="stylesheet" href="styles/base.css" />
+  <link rel="stylesheet" href="styles/components.css" />
+  <link rel="stylesheet" href="styles/pages.css" />
+</head>
+<body>
+  <header class="navbar glass">
+    <div class="inner container">
+      <a class="brand" href="index.html" aria-label="FoxHeight Home">
+        <img src="assets/logo-neural-fox.svg" alt="FoxHeight" />
+        <span class="name">FoxHeight</span>
+      </a>
+      <nav class="nav" aria-label="Primary">
+        <a href="index.html">Company</a>
+        <a href="vision.html">Vision & Mission</a>
+        <a href="partnership.html">Microsoft Partnership</a>
+        <div class="dropdown" aria-expanded="false">
+          <a href="#" class="dropdown-toggle" aria-haspopup="true" aria-expanded="false">Ecosystem ▾</a>
+          <div class="dropdown-menu glass" role="menu">
+            <a class="dropdown-item is-foxflight" href="https://foxflight.foxheight.com" target="_blank" rel="noopener"><span class="dot"></span>FoxFlight</a>
+            <a class="dropdown-item is-foxai" href="https://foxai.foxheight.com" target="_blank" rel="noopener"><span class="dot"></span>FoxAI</a>
+            <a class="dropdown-item is-foxcloud" href="https://foxcloud.foxheight.com" target="_blank" rel="noopener"><span class="dot"></span>FoxCloud</a>
+            <a class="dropdown-item is-foxdata" href="https://foxdata.foxheight.com" target="_blank" rel="noopener"><span class="dot"></span>FoxData</a>
+            <a class="dropdown-item is-foxos" href="https://foxos.foxheight.com" target="_blank" rel="noopener"><span class="dot"></span>FoxOS</a>
+          </div>
+        </div>
+        <a href="ecosystem.html">Overview</a>
+        <a href="about.html">About</a>
+        <a href="careers.html">Careers</a>
+        <a href="resources.html">Resources</a>
+        <a href="docs.html">Documentation</a>
+        <a href="blog.html" aria-current="page">Tech Blog</a>
+        <a href="support.html">Support</a>
+        <a href="press.html">Press Kit</a>
+        <a href="legal.html">Legal</a>
+      </nav>
+      <div class="row">
+        <button class="btn btn--ghost" data-action="toggle-theme" aria-label="Toggle theme">🌓</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="container">
+        <h1 class="gradient-text">Tech Blog</h1>
+        <p class="muted">AI, Data, Cloud, and AGI insights from the FoxHeight team.</p>
+        <div class="grid posts reveal">
+          <article class="post">
+            <div class="thumb"></div>
+            <div class="body">
+              <div class="row" style="justify-content:space-between;">
+                <span class="tag">AI</span>
+                <span class="small muted">By Team</span>
+              </div>
+              <h3>Agentic Systems on Azure</h3>
+              <p class="muted">Design patterns for building reliable, observable agents.</p>
+            </div>
+          </article>
+          <article class="post">
+            <div class="thumb" style="background: linear-gradient(135deg, rgba(31,213,161,0.35), rgba(46,169,255,0.35));"></div>
+            <div class="body">
+              <div class="row" style="justify-content:space-between;">
+                <span class="tag">Cloud</span>
+                <span class="small muted">By Team</span>
+              </div>
+              <h3>Observability with Fabric</h3>
+              <p class="muted">Unifying metrics, traces, and lineage for AI products.</p>
+            </div>
+          </article>
+          <article class="post">
+            <div class="thumb" style="background: linear-gradient(135deg, rgba(255,77,221,0.35), rgba(155,70,255,0.35));"></div>
+            <div class="body">
+              <div class="row" style="justify-content:space-between;">
+                <span class="tag">AGI</span>
+                <span class="small muted">By Team</span>
+              </div>
+              <h3>Engineering the Intelligence Continuum</h3>
+              <p class="muted">A framework for connecting data, models, and agents.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container card" style="padding:16px;">
+        <h2>Subscribe to updates</h2>
+        <div class="row" style="flex-wrap:wrap; gap:12px;">
+          <input style="flex:1; min-width:240px; padding:12px 14px; border-radius: 14px; border:1px solid var(--color-border); background: var(--color-surface);" placeholder="Email address" aria-label="Email address" />
+          <button class="btn btn--primary">Subscribe</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-topline"></div>
+    <div class="inner container">
+      <div class="logos"><img src="assets/logo-neural-fox.svg" alt="FoxHeight" width="28" height="28"/><span class="small muted">© FoxHeight</span></div>
+      <div class="note small">Stories from the engineering frontier</div>
+      <div class="logos"><img src="assets/logo-microsoft.svg" alt="Microsoft" height="30"/></div>
+    </div>
+  </footer>
+
+  <button class="contact-orb" aria-label="Contact FoxHeight"><span class="pulse"></span>✉️</button>
+  <script src="scripts/main.js"></script>
+</body>
+</html>
