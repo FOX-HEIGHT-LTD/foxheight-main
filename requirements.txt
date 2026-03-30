@@ -1,0 +1,1 @@
+Flask==2.1.0\nFlask-SQLAlchemy==2.5.1\nFlask-Migrate==3.1.0\nFlask-Login==0.5.0\nFlask-WTF==1.0.0\nFlask-Cors==3.0.10\ncryptography==36.0.1\npython-dotenv==0.19.2\nSQLAlchemy==1.4.26\nrequests==2.26.0\npytest==6.2.5\nWerkzeug==2.1.0\nJinja2==3.0.3
